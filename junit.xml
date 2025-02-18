@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.043" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Kullanıcı Kayıt Olma" name="Kullanıcı başarılı bir şekilde siteye kaydolur." time="19.612">
+<failure/>
+<system-out><![CDATA[
+Given Kullanıcı tarayıcıyı başlatır.........................................passed
+And Kullanıcı ilgili adrese gider...........................................passed
+Then Kullanıcı ana sayfanın başarılı bir şekilde görüntülendiğini doğrular..passed
+When Kullanıcı "Signup/Login" butonuna tıklar...............................passed
+Then Kullanıcı 'New User Signup!' yazısının görünürlüğünü doğrular..........passed
+When Kullanıcı adını girer..................................................passed
+When Kullanıcı emailini girer...............................................passed
+And Kullanıcı 'Signup' butonuna tıklar......................................passed
+Then Kullanıcı 'ENTER ACCOUNT INFORMATION' yazısının görünürlüğünü doğrular..passed
+When Kullanıcı Title,Name,Email,Password,Date of Birth bilgilerini girer....passed
+And Kullanıcı 'Sign up for our newsletter!' kutucuğunu seçer................undefined
+And Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer..skipped
+When Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer..skipped
+And Kullanıcı 'Create Account' butonuna tılar...............................skipped
+Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular..........skipped
+When Kullanıcı 'Continue' butonuna tıklar...................................skipped
+Then Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.....skipped
+When Kullanıcı 'Delete Account' butonuna tıklar.............................skipped
+Then Kullanıcı 'ACCOUNT DELETED!' görünürlüğünü doğrular....................skipped
+And Kullanıcı 'Continue' butonuna tıklar....................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
