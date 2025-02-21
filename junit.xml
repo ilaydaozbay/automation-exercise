@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.043" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Kullanıcı Kayıt Olma" name="Kullanıcı başarılı bir şekilde siteye kaydolur." time="19.612">
+<testsuite name="Cucumber" time="48.81" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Kullanıcı Kayıt Olma" name="Kullanıcı başarılı bir şekilde siteye kaydolur." time="48.232">
 <failure/>
 <system-out><![CDATA[
 Given Kullanıcı tarayıcıyı başlatır.........................................passed
@@ -13,11 +13,11 @@ When Kullanıcı emailini girer...............................................pa
 And Kullanıcı 'Signup' butonuna tıklar......................................passed
 Then Kullanıcı 'ENTER ACCOUNT INFORMATION' yazısının görünürlüğünü doğrular..passed
 When Kullanıcı Title,Name,Email,Password,Date of Birth bilgilerini girer....passed
-And Kullanıcı 'Sign up for our newsletter!' kutucuğunu seçer................undefined
-And Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer..skipped
-When Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer..skipped
-And Kullanıcı 'Create Account' butonuna tılar...............................skipped
-Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular..........skipped
+And Kullanıcı 'Sign up for our newsletter!' kutucuğunu seçer................passed
+And Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer..passed
+When Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer..passed
+And Kullanıcı 'Create Account' butonuna tılar...............................passed
+Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular..........undefined
 When Kullanıcı 'Continue' butonuna tıklar...................................skipped
 Then Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.....skipped
 When Kullanıcı 'Delete Account' butonuna tıklar.............................skipped

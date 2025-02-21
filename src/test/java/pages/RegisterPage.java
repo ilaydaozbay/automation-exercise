@@ -3,10 +3,12 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import utility.BrowserDriver;
 import utility.ConfigReader;
 
 import java.time.Duration;
@@ -34,6 +36,17 @@ public class RegisterPage {
     private By yearField = By.xpath("//select[@id='years']");
     private By signupcheckbox = By.xpath("//input[@id='newsletter']");
     private By partnercheckbox = By.xpath("//input[@id='optin']");
+    private By f_nameField = By.xpath("//input[@id='first_name']");
+    private By l_nameField = By.xpath("//input[@id='last_name']");
+    private By companyField = By.xpath("//input[@id='company']");
+    private By adressField = By.xpath("//input[@id='address1']");
+    private By adressField2 = By.xpath("//input[@id='address2']");
+    private By countryField = By.xpath("//select[@id='country']");
+    private By stateField = By.xpath("//input[@id='state']");
+    private By cityField = By.xpath("//input[@id='city']");
+    private By zipcodeField = By.xpath("//input[@id='zipcode']");
+    private By phoneField = By.xpath("//input[@id='mobile_number']");
+    private By create_accountBtn = By.xpath("//button[normalize-space()='Create Account']");
 
     // Ana sayfa doğrulama
     public void verifyHomepage() {
@@ -107,4 +120,59 @@ public class RegisterPage {
         Select select = new Select(dateofbirthDropdown_year);
         select.selectByVisibleText("2002");
     }
+
+    public void checkboxSignup(){
+        driver.findElement(signupcheckbox).click();
+    }
+
+    public void checkboxPartner(){
+        driver.findElement(partnercheckbox).click();
+    }
+
+    public void enterFirstname(){
+        driver.findElement(f_nameField).sendKeys("Ilayda");
+    }
+
+    public void enterLastname(){
+        driver.findElement(l_nameField).sendKeys("Ozbay");
+    }
+
+    public void enterCompany(){
+        driver.findElement(companyField).sendKeys("Şirket");
+    }
+
+    public void enterAdress(){
+        driver.findElement(adressField).sendKeys("Istanbul");
+    }
+
+    public void enterAdress2(){
+        driver.findElement(adressField2).sendKeys("Küçükçekmece");
+    }
+
+    public void selectCountry(){
+        WebElement element_counrtyField = driver.findElement(countryField);
+        Select select = new Select(element_counrtyField);
+        select.selectByIndex(2);
+    }
+
+    public void enterState(){
+        driver.findElement(stateField).sendKeys("State");
+    }
+
+    public void enterCity(){
+        driver.findElement(cityField).sendKeys("city");
+    }
+
+    public void enterZipcode(){
+        driver.findElement(zipcodeField).sendKeys("1234");
+    }
+
+    public void enterphoneno(){
+        driver.findElement(phoneField).sendKeys("054367823");
+    }
+
+    public void createAccount(){
+        driver.findElement(create_accountBtn).click();
+    }
 }
+

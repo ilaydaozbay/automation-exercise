@@ -63,11 +63,34 @@ public class RegisterPageSteps extends BrowserDriver {
         registerPage.dateofbirth_year();
     }
 
-    /*
     @And("Kullanıcı 'Sign up for our newsletter!' kutucuğunu seçer.")
+    public void checkbox_Signup(){
+        registerPage.checkboxSignup();
+    }
     @And("Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer.")
+    public void checkbox_Partner(){
+        registerPage.checkboxPartner();
+    }
     @When("Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer.")
+    public void enter_info(){
+        registerPage.enterFirstname();
+        registerPage.enterLastname();
+        registerPage.enterCompany();
+        registerPage.enterAdress();
+        registerPage.enterAdress2();
+        registerPage.selectCountry();
+        registerPage.enterState();
+        registerPage.enterCity();
+        registerPage.enterZipcode();
+        registerPage.enterphoneno();
+    }
+
     @And("Kullanıcı 'Create Account' butonuna tılar.")
+    public void create_Account(){
+        registerPage.createAccount();
+    }
+
+    /*
     @Then("Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular.")
     @When("Kullanıcı 'Continue' butonuna tıklar.")
     @Then("Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.")
