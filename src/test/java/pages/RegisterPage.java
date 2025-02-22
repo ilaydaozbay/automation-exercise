@@ -47,6 +47,12 @@ public class RegisterPage {
     private By zipcodeField = By.xpath("//input[@id='zipcode']");
     private By phoneField = By.xpath("//input[@id='mobile_number']");
     private By create_accountBtn = By.xpath("//button[normalize-space()='Create Account']");
+    private By accountcreatedText = By.xpath("//b[normalize-space()='Account Created!']");
+    private By continueButton = By.xpath("//a[@class='btn btn-primary']");
+    private By LoggedInText = By.xpath("//li[10]//a[1]");
+    private By deleteaccountBtn = By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a");
+    private By accountdeletedText = By.xpath("//b[normalize-space()='Account Deleted!']");
+    private By continueButton2 = By.xpath("//a[@class='btn btn-primary']");
 
     // Ana sayfa doğrulama
     public void verifyHomepage() {
@@ -173,6 +179,32 @@ public class RegisterPage {
 
     public void createAccount(){
         driver.findElement(create_accountBtn).click();
+    }
+
+    public void verifyAccountCreated(){
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+        WebElement element_accountcreatedText = wait.until(ExpectedConditions.visibilityOfElementLocated(accountcreatedText));
+        element_accountcreatedText.isDisplayed();
+    }
+
+    public void clickContinueButton(){
+        driver.findElement(continueButton).click();
+    }
+
+    public void verifyUserIsLoggedIn(){
+        driver.findElement(LoggedInText).isDisplayed();
+    }
+
+    public void clickDeleteAccountBtn(){
+        driver.findElement(deleteaccountBtn).click();
+    }
+
+    public void verifyAccountDeleted(){
+        driver.findElement(accountdeletedText).isDisplayed();
+    }
+
+    public void clickContinueButton2(){
+        driver.findElement(continueButton2).click();
     }
 }
 

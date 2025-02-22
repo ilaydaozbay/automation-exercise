@@ -30,30 +30,37 @@ public class RegisterPageSteps extends BrowserDriver {
     public void verify_Homepage(){
         registerPage.verifyHomepage();
     }
+
     @When("Kullanıcı {string} butonuna tıklar")
     public void click_SignupLogin_Btn(String signupButton){
         registerPage.clickSignupButton();
     }
+
     @Then("Kullanıcı 'New User Signup!' yazısının görünürlüğünü doğrular.")
     public void verifySignUp(){
         registerPage.isNewUserSignupVisible();
     }
+
     @When("Kullanıcı adını girer.")
     public void enter_name(){
         registerPage.enterName();
     }
+
     @When("Kullanıcı emailini girer.")
     public void enter_email(){
         registerPage.enterEmail();
     }
+
     @And("Kullanıcı 'Signup' butonuna tıklar.")
     public void click_Signup_Btn(){
         registerPage.clickSignupBtn();
     }
+
     @Then("Kullanıcı 'ENTER ACCOUNT INFORMATION' yazısının görünürlüğünü doğrular.")
     public void enter_account_visible(){
         registerPage.isEnterAccountInformationVisible();
     }
+
     @When("Kullanıcı Title,Name,Email,Password,Date of Birth bilgilerini girer.")
     public void fill(){
         registerPage.fillTitle();
@@ -67,10 +74,12 @@ public class RegisterPageSteps extends BrowserDriver {
     public void checkbox_Signup(){
         registerPage.checkboxSignup();
     }
+
     @And("Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer.")
     public void checkbox_Partner(){
         registerPage.checkboxPartner();
     }
+
     @When("Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer.")
     public void enter_info(){
         registerPage.enterFirstname();
@@ -90,14 +99,33 @@ public class RegisterPageSteps extends BrowserDriver {
         registerPage.createAccount();
     }
 
-    /*
     @Then("Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular.")
+    public void verify_AccountCreated(){
+        registerPage.verifyAccountCreated();
+    }
+
     @When("Kullanıcı 'Continue' butonuna tıklar.")
+    public void click_ContinueButton(){
+        registerPage.clickContinueButton();
+    }
+
     @Then("Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.")
-    @When("Kullanıcı 'Delete Account' butonuna tıklar")
+    public void verify_UserIsLoggedIn(){
+        registerPage.verifyUserIsLoggedIn();
+    }
+
+    @When("Kullanıcı 'Delete Account' butonuna tıklar.")
+    public void click_DeleteAccountBtn(){
+        registerPage.clickDeleteAccountBtn();
+    }
+
     @Then("Kullanıcı 'ACCOUNT DELETED!' görünürlüğünü doğrular")
-    @And("Kullanıcı 'Continue' butonuna tıklar.")
+    public void verify_AccountDeleted(){
+        registerPage.verifyAccountDeleted();
+    }
 
-
-     */
+    @And("Kullanıcı diğer 'Continue' butonuna tıklar.")
+    public void click_ContinueButton2(){
+        registerPage.clickContinueButton2();
+    }
 }

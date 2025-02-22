@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="48.81" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Kullanıcı Kayıt Olma" name="Kullanıcı başarılı bir şekilde siteye kaydolur." time="48.232">
-<failure/>
+<testsuite name="Cucumber" time="29.748" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Kullanıcı Kayıt Olma" name="Kullanıcı başarılı bir şekilde siteye kaydolur." time="29.338">
 <system-out><![CDATA[
 Given Kullanıcı tarayıcıyı başlatır.........................................passed
 And Kullanıcı ilgili adrese gider...........................................passed
@@ -17,12 +16,12 @@ And Kullanıcı 'Sign up for our newsletter!' kutucuğunu seçer................
 And Kullanıcı 'Receive special offers from our partners!' kutucuğunu seçer..passed
 When Kullanıcı First name, Last name, Company, Adress, Adress2, Country, State, City,Zipcode,Mobile Number bilgilerini girer..passed
 And Kullanıcı 'Create Account' butonuna tılar...............................passed
-Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular..........undefined
-When Kullanıcı 'Continue' butonuna tıklar...................................skipped
-Then Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.....skipped
-When Kullanıcı 'Delete Account' butonuna tıklar.............................skipped
-Then Kullanıcı 'ACCOUNT DELETED!' görünürlüğünü doğrular....................skipped
-And Kullanıcı 'Continue' butonuna tıklar....................................skipped
+Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular..........passed
+When Kullanıcı 'Continue' butonuna tıklar...................................passed
+Then Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.....passed
+When Kullanıcı 'Delete Account' butonuna tıklar.............................passed
+Then Kullanıcı 'ACCOUNT DELETED!' görünürlüğünü doğrular....................passed
+And Kullanıcı 'Continue' butonuna tıklar....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

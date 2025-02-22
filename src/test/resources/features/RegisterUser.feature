@@ -18,6 +18,6 @@ Feature: Kullanıcı Kayıt Olma
     Then Kullanıcı 'ACCOUNT CREATED!' yazısının görünürlüğünü doğrular.
     When Kullanıcı 'Continue' butonuna tıklar.
     Then Kullanıcı 'Logged in as username' yazısının görünürlüğünü doğrular.
-    When Kullanıcı 'Delete Account' butonuna tıklar
+    When Kullanıcı 'Delete Account' butonuna tıklar.
     Then Kullanıcı 'ACCOUNT DELETED!' görünürlüğünü doğrular
     And Kullanıcı 'Continue' butonuna tıklar.
